@@ -21,6 +21,8 @@ class  BankAccount(private var balance: Double, var accountHolder: String) {
         }else if(type == "retirada" || type == "Retirada" || type == "RETIRADA"){
             withdraw(setAmount)
             println("Novo saldo: $balance")
+        }else {
+            println("Opção inválida")
         }
     }
 }
